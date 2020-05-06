@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "",
+  "db": "mongodb+srv://tomio:98819881@cluster0-lcupc.mongodb.net/vidly"
+}
