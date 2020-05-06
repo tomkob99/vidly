@@ -1,5 +1,6 @@
 
 
+const config = require('config');
 const winston = require('winston');
 require('winston-mongodb');
 const db = config.get('db');
@@ -7,6 +8,7 @@ const db = config.get('db');
 const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(),
+    // new winston.transports.File({ filename: 'combined.log' })
     new winston.transports.File({ filename: 'combined.log' }),
     new winston.transports.MongoDB({ db: db })
   ]
