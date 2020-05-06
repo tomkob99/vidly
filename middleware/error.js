@@ -2,12 +2,13 @@
 
 const winston = require('winston');
 require('winston-mongodb');
+const db = config.get('db');
 
 const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({ filename: 'combined.log' }),
-    new winston.transports.MongoDB({ db: 'mongodb://192.168.0.36:27017/vidly' })
+    new winston.transports.MongoDB({ db: db })
   ]
 });
 
