@@ -1,3 +1,10 @@
 node_modules/
 coverage/
 combined.log
+.DS_Store
+testdb.js
+testdb2.js
+testdb3.js
+testdb4.js
+winston-example1.js
+winston-example4.js
